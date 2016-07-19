@@ -1,0 +1,75 @@
+<android.support.design.widget.CollapsingToolbarLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:showIn="@layout/activity_detail"
+                tools:context="com.developer.jc.newsreporter.activities.DetailActivityFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:adjustViewBounds="true"
+                 android:cropToPadding="false"
+                 android:scaleType="fitXY"
+                 android:contentDescription="@string/detail_image_article_description"
+                 android:id="@+id/articleImage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="@dimen/title_bar_height_detail_fragment"
+                    android:elevation="@dimen/layout_elevation_detail_fragment"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/articleTitle"
+                     android:layout_marginTop="@dimen/article_title_margin_top_detailfragment"
+                     android:textSize="@dimen/article_title_text_size_detailfragment"
+                     android:layout_weight="2"
+                     android:textColor="@color/colorLightPrimary"
+                     android:layout_centerHorizontal="true"
+                     android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/articleAuthor"/>
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:id="@+id/articleDate"/>-->
+                </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/articleText"
+        android:textSize="@dimen/article_text_size"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/articleTitle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CollapsingToolbarLayout>

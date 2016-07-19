@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "101446911253",
+    "project_id": "firebase-newsreporter"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101446911253:android:149127cb47566b39",
+        "android_client_info": {
+          "package_name": "com.developer.jc.newsreporter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvgdvqrpQGYlJ57RrfKlbYqnEfOM6gkiM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-80737658-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
