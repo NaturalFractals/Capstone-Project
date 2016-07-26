@@ -3,12 +3,16 @@ package com.developer.jc.newsreporter.activities;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.developer.jc.newsreporter.R;
@@ -55,12 +59,17 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        //Set icon based on detail activity
+        //Set icon and content description based on detail activity
         if(favoritesCheck == null) {
             fab.setImageResource(R.drawable.starstar);
+            String articleAdd = getString(R.string.article_add);
+            fab.setContentDescription(articleAdd);
         } else {
             fab.setImageResource(R.drawable.trashcan);
+            String articleDelete = getString(R.string.article_delete);
+            fab.setContentDescription(articleDelete);
         }
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

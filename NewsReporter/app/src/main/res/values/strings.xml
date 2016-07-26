@@ -21,6 +21,8 @@
     <!-- Content descriptions-->
     <string name="list_image_description">Image from news article</string>
     <string name="detail_image_article_description">Image from news article</string>
+    <string name="article_add">Add Article</string>
+    <string name="article_delete">Delete Article</string>
 
 
 </resources>

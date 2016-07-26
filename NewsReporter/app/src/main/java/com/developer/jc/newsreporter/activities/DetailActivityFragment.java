@@ -59,6 +59,7 @@ public class DetailActivityFragment extends Fragment {
             }
             articleView.setText(text);
             Picasso.with(getContext()).load(articleImageUrl).resize(1400, 1400)
+                    .centerInside()
                     .into(articleImage);
             articleAuthor.setText(articleAuthorText);
         }
