@@ -41,6 +41,7 @@
                      android:layout_height="wrap_content"
                      android:id="@+id/articleTitle"
                      android:layout_marginTop="@dimen/article_title_margin_top_detailfragment"
+                     android:layout_marginLeft="@dimen/article_title_margin_left_detailfragment"
                      android:textSize="@dimen/article_title_text_size_detailfragment"
                      android:layout_weight="2"
                      android:textColor="@color/colorLightPrimary"
@@ -50,6 +51,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/article_title_margin_left_detailfragment"
                         android:layout_weight="1"
                         android:id="@+id/articleAuthor"/>
                     <!--<TextView-->
@@ -62,6 +64,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/article_margin_top"
         android:id="@+id/articleText"
         android:textSize="@dimen/article_text_size"
         android:layout_centerVertical="true"

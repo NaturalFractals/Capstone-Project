@@ -11,11 +11,15 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     -->
     <dimen name="widget_margin">8dp</dimen>
     <dimen name="widget_title_text_size">10sp</dimen>
+    <dimen name="widget_text_size">24sp</dimen>
 
     <dimen name="article_text_size">16sp</dimen>
     <dimen name="article_title_text_size_detailfragment">20sp</dimen>
 
     <dimen name="article_title_margin_top_detailfragment">6sp</dimen>
     <dimen name="layout_elevation_detail_fragment">2dp</dimen>
+    <dimen name="article_title_margin_left_detailfragment">8dp</dimen>
     <dimen name="title_bar_height_detail_fragment">100dp</dimen>
+    <dimen name="article_margin_top">8dp</dimen>
+
 </resources>
