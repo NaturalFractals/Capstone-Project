@@ -37,7 +37,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NewsAsyncTask extends AsyncTask<Void, Void, Void> {
 
     private String baseUrl = "https://api.nytimes.com";
-    private String apiKey = "4e711c72786c421180e37671f6e8c306";
+    private String apiKey = "API_KEY_HERE";
     public static final String ACTION_DATA_UPDATE = "com.developer.jc.newsreporter.ACTION_DATA_UPDATE";
     private List<Result> mResults;
     private Context mContext;
